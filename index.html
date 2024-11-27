@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="col">
+            <label for="">Введите сумму:</label>
+            <div class="input-currency">
+                <input id="currency" type="number" oninput="myFunction()">
+                <select name="currency" id="volute" onchange="myFunction()">
+                    <option value="KZT">KZT</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select>
+                <select name="buy-or-sell" id="buy-or-sell" onchange="myFunction()">
+                    <option value="buy">Buy</option>
+                    <option value="sell">Sell</option>
+                </select>
+            </div>
+        </div>
+        <div class="col">
+            <label for="kzt">KZT (tenge)</label>
+            <input id="kzt-input" type="text" disabled />
+        </div>
+        <div class="col">
+            <label for="usd">USD (dollar)</label>
+            <input id="usd-input" type="text" disabled />
+        </div>
+        <div class="col">
+            <label for="eur">EUR (euro)</label>
+            <input id="eur-input" type="text" disabled />
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
